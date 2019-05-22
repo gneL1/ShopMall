@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <View
+    android:id="@+id/V_Line_Left"
+    android:background="@color/colorGray"
+    android:layout_width="1dp"
+    android:layout_height="40dp"
+    />
+
+    <View
+        android:layout_toRightOf="@id/V_Line_Left"
+        android:layout_marginLeft="40dp"
+        android:background="@color/colorGray"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        />
+
+    <View
+        android:layout_toRightOf="@id/V_Line_Left"
+        android:layout_marginLeft="80dp"
+        android:background="@color/colorGray"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        />
+
+    <View
+        android:layout_toRightOf="@id/V_Line_Left"
+        android:layout_marginLeft="120dp"
+        android:background="@color/colorGray"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        />
+
+    <View
+    android:id="@+id/V_Line_Top"
+    android:background="@color/colorGray"
+    android:layout_width="120dp"
+    android:layout_height="1dp"
+    />
+
+    <View
+        android:layout_below="@id/V_Line_Top"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorGray"
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        />
+
+
+    <ImageView
+    android:id="@+id/Iv_Sub"
+    android:src="@drawable/sub"
+    android:padding="10dp"
+    android:layout_width="40dp"
+    android:layout_height="40dp" />
+
+    <ImageView
+    android:id="@+id/Iv_Add"
+    android:layout_marginLeft="80dp"
+    android:src="@drawable/add"
+    android:padding="10dp"
+    android:layout_width="40dp"
+    android:layout_height="40dp" />
+
+    <TextView
+    android:id="@+id/Tv_Value"
+    android:gravity="center"
+    android:textSize="22dp"
+    android:layout_marginLeft="40dp"
+    android:text=""
+    android:textColor="@color/colorBlack"
+    android:layout_width="40dp"
+    android:layout_height="40dp" />
+
+
+
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/Iv_Sub"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:src="@drawable/sub"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/Iv_Add"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:layout_marginLeft="80dp"-->
+        <!--android:src="@drawable/add"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/Tv_Value"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="22dp"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:text=""-->
+        <!--android:textColor="@color/colorBlack"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp" />-->
+
+
+    <!--<View-->
+        <!--android:id="@+id/V_Line_Left"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:background="@color/colorGray"-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--/>-->
+
+    <!--<View-->
+        <!--android:id="@+id/V_Line_Top"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="@id/V_Line_Left"-->
+        <!--android:background="@color/colorGray"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--/>-->
+
+    <!--<View-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="@id/V_Line_Left"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:background="@color/colorGray"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--/>-->
+
+    <!--<View-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:background="@color/colorGray"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--/>-->
+
+    <!--<View-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:background="@color/colorGray"-->
+        <!--android:layout_marginLeft="80dp"-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--/>-->
+
+    <!--<View-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:background="@color/colorGray"-->
+        <!--android:layout_marginLeft="120dp"-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--/>-->
+
+
+</RelativeLayout>

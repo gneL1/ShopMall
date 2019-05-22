@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBox
+        android:id="@+id/Cb_Gov"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:button="@drawable/chechbox_selector"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/Iv_Gov"
+        app:layout_constraintLeft_toRightOf="@+id/Cb_Gov"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/Tv_Desc_Gov"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/Iv_Gov"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="此处显示商品名称"
+        android:maxEms="12"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/Tv_Price_Gov"
+        app:layout_constraintTop_toBottomOf="@id/Tv_Desc_Gov"
+        app:layout_constraintLeft_toRightOf="@id/Iv_Gov"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorOrange"
+        android:text="￥0.0"
+        android:gravity="left"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+
+    <com.example.shopmall.publicview.AddSubView
+        android:id="@+id/AddSubView"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Desc_Gov"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        app:layout_constraintTop_toBottomOf="@+id/AddSubView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

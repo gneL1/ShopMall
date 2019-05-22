@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/Iv_Img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/Tv_Name"
+        app:layout_constraintLeft_toRightOf="@id/Iv_Img"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxEms="12"
+        android:maxLines="1"
+        android:text="此处显示商品名称"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/Tv_Desc"
+        app:layout_constraintLeft_toRightOf="@id/Iv_Img"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:text="此处显示商品描述"
+        android:textColor="#636363"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/Tv_Price"
+        app:layout_constraintBottom_toTopOf="@id/V_Line"
+        app:layout_constraintLeft_toRightOf="@id/Iv_Img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="此处显示价格"
+        android:textColor="#FF5722"
+        android:textSize="20sp" />
+
+
+    <View
+        android:id="@+id/V_Line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Iv_Img"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#5E5E5E" />
+
+</android.support.constraint.ConstraintLayout>

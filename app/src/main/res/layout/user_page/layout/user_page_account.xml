@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gcs="http://schemas.android.com/xmlns:app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+<LinearLayout
+    android:background="#FFC107"
+
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Ri_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:riv_oval="true"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/user_account_left"
+
+    />
+
+
+
+    <TextView
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/Tv_Name"
+        android:textSize="20dp"
+        android:text="登录/注册"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+</LinearLayout>

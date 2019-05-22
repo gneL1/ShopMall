@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_toLeftOf="@+id/Tv_Text"
+        android:src="@drawable/root_cart"
+        android:layout_width="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/Tv_Text"
+        android:text="购物车还是空的"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/Btn_See"
+        android:layout_below="@id/Tv_Text"
+        android:background="@drawable/cart_see"
+        android:text="去逛逛"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Tv_background"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <ImageView
+        android:id="@+id/Iv_Img"
+        android:src="@drawable/home_arror_left"
+        android:layout_width="40dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:layout_toRightOf="@id/Iv_Img"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:text="个人资料"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/Tv_Top"
+        android:layout_below="@+id/Tv_background"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@null"/>
+
+    <TextView
+    android:id="@+id/Tv_Left_Hp"
+    android:text="    头像"
+    android:textSize="20dp"
+    android:background="#fff"
+    android:layout_below="@+id/Tv_Top"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/Img_Touxiang"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/girl_bg2"
+        android:layout_alignLeft="@+id/Tv_Right_Hp"
+        app:riv_oval="true"
+        android:background="#fff"
+        android:layout_below="@+id/Tv_Top"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+
+    <TextView
+        android:id="@+id/Tv_Right_Hp"
+        android:text=""
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/Tv_Top"
+        android:layout_alignRight="@+id/Tv_Left_Hp"
+        android:layout_width="100dp"
+        android:layout_height="60dp" />
+    <View
+        android:id="@+id/V_Line1"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:layout_below="@id/Tv_Left_Hp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/Tv_Left_Name"
+        android:text="    姓名"
+        android:textSize="20dp"
+        android:background="#fff"
+        android:layout_below="@+id/V_Line1"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/Tv_Right_Name"
+        android:text="要修改的姓名"
+        android:background="#fff"
+        android:layout_below="@+id/V_Line1"
+        android:layout_alignRight="@+id/Tv_Left_Name"
+        android:layout_width="100dp"
+        android:layout_height="60dp" />
+    <View
+        android:id="@+id/V_Line2"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:layout_below="@id/Tv_Left_Name"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/Tv_Left_Sex"
+        android:text="    性别"
+        android:textSize="20dp"
+        android:background="#fff"
+        android:layout_below="@+id/V_Line2"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/Tv_Right_Sex"
+        android:text="要修改的性别"
+        android:background="#fff"
+        android:layout_below="@+id/V_Line2"
+        android:layout_alignRight="@+id/Tv_Left_Sex"
+        android:layout_width="100dp"
+        android:layout_height="60dp" />
+    <View
+        android:id="@+id/V_Line3"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:layout_below="@id/Tv_Left_Sex"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/Tv_Left_Email"
+        android:text="    邮箱"
+        android:textSize="20dp"
+        android:background="#fff"
+        android:layout_below="@+id/V_Line3"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/Tv_Right_Email"
+        android:text="要修改的邮箱"
+        android:background="#fff"
+        android:layout_below="@+id/V_Line3"
+        android:layout_alignRight="@+id/Tv_Left_Email"
+        android:layout_width="100dp"
+        android:layout_height="60dp" />
+    <View
+        android:id="@+id/V_Line4"
+        android:layout_marginTop="15dp"
+
+        android:background="#fff"
+        android:layout_below="@id/Tv_Left_Email"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/Tv_Left_Pwd"
+        android:text="    修改密码"
+        android:textSize="20dp"
+        android:background="#fff"
+        android:layout_below="@+id/V_Line4"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/Tv_Right_Pwd"
+        android:text="要修改的密码"
+        android:background="#fff"
+        android:layout_below="@+id/V_Line4"
+        android:layout_alignRight="@+id/Tv_Left_Pwd"
+        android:layout_width="100dp"
+        android:layout_height="60dp" />
+    <View
+        android:id="@+id/V_Line5"
+        android:background="#fff"
+        android:layout_below="@id/Tv_Left_Pwd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+
+</RelativeLayout>

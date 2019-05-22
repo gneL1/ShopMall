@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    >
+
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/user_account_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"/>
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/black_background"
+            android:layout_width="1dp"
+            android:layout_height="25dp"/>
+
+        <EditText
+            android:id="@+id/Et_Username"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:ems="14"
+            android:hint="用户名"
+            android:background="@null"/>
+
+        <ImageView
+            android:id="@+id/Iv_Nameclear"
+            android:visibility="invisible"
+            android:src="@drawable/user_account_password_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"/>
+
+
+     </LinearLayout>
+
+    <View
+        android:background="@color/colorGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/user_account_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"/>
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/black_background"
+            android:layout_width="1dp"
+            android:layout_height="25dp"/>
+
+        <EditText
+            android:id="@+id/Et_Userpassword"
+            android:inputType="textPassword"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:ems="14"
+            android:hint="密码"
+            android:background="@null"/>
+
+        <ImageView
+            android:id="@+id/Iv_Passwordclear"
+            android:visibility="invisible"
+            android:src="@drawable/user_account_password_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="340dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        >
+
+        <CheckBox
+
+            android:id="@+id/Cb_Remem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:duplicateParentState="false"
+            android:text="记住密码"
+            android:textColor="#2C70B4"
+            android:textSize="15sp"
+            android:buttonTint="@color/colorGray"
+            android:layout_weight="1"
+
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/Btn_Register"
+            android:text="用户注册"
+            android:textSize="15sp"
+            android:gravity="end"
+            android:textColor="#2C70B4"
+            android:background="@null"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:id="@+id/Btn_Login"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_round_corner"
+        android:padding="10dp"
+        android:text="登录"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Rl_cart"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#979797"
+        android:layout_above="@+id/Tv_Mycart"/>
+    <TextView
+        android:id="@+id/Tv_Mycart"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:text="我的订单"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/Tv_Allcart"
+        android:layout_marginTop="5dp"
+        android:drawableRight="@drawable/home_arrow_right"
+        android:layout_alignParentRight="true"
+        android:text="全部订单"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/V_Line"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/Tv_Mycart"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#979797"/>
+
+    <GridView
+        android:id="@+id/Gv_Foptions"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/V_Line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"></GridView>
+
+    <View
+
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Gv_Foptions"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#979797"/>
+
+
+
+
+
+</RelativeLayout>
